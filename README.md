@@ -116,3 +116,38 @@ endif
 ```
 
 ![](http://www.plantuml.com/plantuml/img/LSvD2W8n30NWVKuHib9XhZ0CY8ZWmhzTcKMnwRHGEzAczpSLDwu2Z-yzCbMnHTehWKH9Z8zYlOzFFCSb26nsMno64UdQk341H8zqylyAWwsu3pOlJ2Y1Cs0lcMDXpZFInTPAccbQTCiSifjr63XLxdGqDtRgxhA-wTVj1hyek-W19htwv0S0)
+
+* รูปที่ 2 เปลี่ยนอุณหภูมิ
+```
+@startuml
+title Air temperature
+(*) --> "Remote"
+if "Press Remote\n for change temperature" then
+  -->[increase] "Rooms heat up"
+    -r-> [End](*)
+else
+  ->[decrease] "Temperature down"
+  -->[End] (*)
+endif
+@enduml
+```
+
+![](http://www.plantuml.com/plantuml/img/JOyn3i8m34LtdyBA14YzGbK6TeJOIeUe-QMHcgHo775zKa30PCd-xtsvosf5IrX8lIxWenTMX1LYjGXeTzXpqxHiBWX9OOZynEOio9dVgrlaAGcFiurt_BE6TKOatlZUnr5WCuPgIYbadc6LoshglIQaLlIdw8RQHrWoDgpj7RxKzITcbnxHVCGRn2ygEZyHTNNMTvu0)
+
+* รูปที่ 3 ปลดล็อค iPhone
+```
+@startuml
+title Unlock iPhone
+(*) --> "iPhone and Finger"
+
+if "Put your finger on the scanner" then
+  -->[straight] "Unlock iPhone"
+    -r-> [End](*)
+else
+  -r->[not straight] "Try Again"
+  -->[End] (*)
+endif
+@enduml
+```
+
+![](http://www.plantuml.com/plantuml/img/LK-x3i8m3Dpz5QTCWCGle3B0t06cgaFKfgr5SAJ47Vhtk2q3JDQTxw6hYlgiypkIiiQ0fyJKlS3rb2JGuNJ4-No1sp6yzBYpZ24x8XxWwbcnf3bZs5WaWKu1fVCY9bg14DQCfcZsF4xQmlsLEFkR8bjDSvE-jKuAiGJQoKQIuiVxo0kkesTntzpLWyqaFGz4bLtRym40)
