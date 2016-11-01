@@ -59,3 +59,21 @@ WaitForProduct -l-> [*] : receive
 ```
 
 ![](http://www.plantuml.com/plantuml/img/RP5DQyCm38Rl_XKw3_87SXZToiOEXPQLqaEpWnUhhS2HWwmCykzhU_c0iPFG-pxwiBo9QaM7pXibzGYmPq-CSBo7lYU-cSlJ5rHIFSCPloCfGWtx7dbEpIgVFdTBLYe-GfVrDrQKOsOd0GuItD1gmmUX5bEWLWUP_5AQY2lv3E_2ZTYi-IcYiEtMgePVd1ECSO4gbpfiqxCIdhnv76WegfciPGlRXO5JV2NlVytAvntis24NqevcpROstXjEd5l4mfyjwNkGULfT1FElcWuBro3WqDCFolYNAltovMiGR34nPeFiyZSz0000)
+
+* รูปที่ 4 เติมเงิน
+```
+@startuml
+title  Top-Up
+[*] -r-> MachineTopUp : Go to Machine TopUp
+MachineTopUp : Menu
+MachineTopUp -r-> PressMenu : Enter Menu
+PressMenu : Select callnumber\namount
+PressMenu -d-> Money : Insert Money
+Money : Coin\nBill
+Money -l-> Confirm : Press OK
+Confirm : Check Money\nCheck call number
+Confirm -l-> [*] : End
+@enduml
+```
+
+![](http://www.plantuml.com/plantuml/img/NP3D2i9038Jl-nGv2_i27gHOH4IAWlPaFQnjf8lRRDcc1z_U_R5QFURBP9XCDh1oF7P6i6Q306VRox8NbyKLf9ChA5JTQaAFonwMiBN0Te8GgVYJ54ZZBuj6HuV347PUiY56buHpV4A3DKEjZA6nkw6hI7Ls99wfP1D2MSAdFzZHW8xJA2QOMqqLhRKnRoIDFyajtRNh_3vwmM4llYXliNuacuhI4490Il4HHgFGJFYW4HbI4vfx0G00)
