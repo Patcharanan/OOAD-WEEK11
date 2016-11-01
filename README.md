@@ -95,3 +95,6 @@ HomeFeed -l-> [*] : Successful
 ```
 
 ![](http://www.plantuml.com/plantuml/img/LP3DIaCn44RtUOfP2zcww48gsek5OejIN1WNkSdS4amcafbO-lQcXVlZSkPytu6PDOijKbDK4YGYm2wV0a5d7VOvVwlFko_GHJ_01_OS1645-n-aSLJp-lYsC_IAPn3RJ-jRTPIrq8O4osnVa2DZ8PlGqC4odtFnXZOwsH0DFTaOWMhgiSmLxPjwwv4a39T9pUXg2N81bpsg1Vu7u1wUmod85D2noLvomWxHj_HsWFVg739tDQe5Q0UoeKSduRV9Pd8JN9-r6ej3AwwH_FMtVm00)
+
+
+## Activity Diagram
