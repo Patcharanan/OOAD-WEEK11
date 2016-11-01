@@ -77,3 +77,21 @@ Confirm -l-> [*] : End
 ```
 
 ![](http://www.plantuml.com/plantuml/img/NP3D2i9038Jl-nGv2_i27gHOH4IAWlPaFQnjf8lRRDcc1z_U_R5QFURBP9XCDh1oF7P6i6Q306VRox8NbyKLf9ChA5JTQaAFonwMiBN0Te8GgVYJ54ZZBuj6HuV347PUiY56buHpV4A3DKEjZA6nkw6hI7Ls99wfP1D2MSAdFzZHW8xJA2QOMqqLhRKnRoIDFyajtRNh_3vwmM4llYXliNuacuhI4490Il4HHgFGJFYW4HbI4vfx0G00)
+
+* รูปที่ 5 Login Facebook
+```
+@startuml
+title  Login Facebook
+[*] -r-> Website : Open Website
+Website : URL\nNew tab
+Website -r-> Facebook : Enter Facebook
+Facebook : Username\nPassword\nE-mail\nCall number
+Facebook -d-> Identify : Enter security code
+Identify : security code 6 Digit
+Identify-l-> HomeFeed : If SuccessFul
+HomeFeed : News\nActivity
+HomeFeed -l-> [*] : Successful
+@enduml
+```
+
+![](http://www.plantuml.com/plantuml/img/LP3DIaCn44RtUOfP2zcww48gsek5OejIN1WNkSdS4amcafbO-lQcXVlZSkPytu6PDOijKbDK4YGYm2wV0a5d7VOvVwlFko_GHJ_01_OS1645-n-aSLJp-lYsC_IAPn3RJ-jRTPIrq8O4osnVa2DZ8PlGqC4odtFnXZOwsH0DFTaOWMhgiSmLxPjwwv4a39T9pUXg2N81bpsg1Vu7u1wUmod85D2noLvomWxHj_HsWFVg739tDQe5Q0UoeKSduRV9Pd8JN9-r6ej3AwwH_FMtVm00)
