@@ -98,3 +98,21 @@ HomeFeed -l-> [*] : Successful
 
 
 ## Activity Diagram
+
+* รูปที่ 1 สัญญาณไฟจราจร
+```
+@startuml
+title Traffic Light
+(*) --> "Queue"
+
+if "If Traffic Light has Change" then
+  -->[Green] "Pass"
+    -r-> [End](*)
+else
+  ->[Red] "Stop"
+  -->[End] (*)
+endif
+@enduml
+```
+
+![](http://www.plantuml.com/plantuml/img/LSvD2W8n30NWVKuHib9XhZ0CY8ZWmhzTcKMnwRHGEzAczpSLDwu2Z-yzCbMnHTehWKH9Z8zYlOzFFCSb26nsMno64UdQk341H8zqylyAOyLzi7bXGWcS0Nl770jpdf4kjbRIJDEYK-QGtQoxmAbofwEviLDtb_LDlsut-4NPHGymwTKVFm00)
