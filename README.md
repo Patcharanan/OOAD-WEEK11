@@ -171,3 +171,24 @@ endif
 ```
 
 ![](http://www.plantuml.com/plantuml/img/JK_D2i8m3BxtAJvwKg4-WkoWLn4zwWwbpLYXwqQR2NjxCvrZEIJX-ybFLTXc7hkeE70ad2c6D-K9QdVOmvWJzAqltDcarTB0U87zAbIXWGQ6XNLzHolxIZPvP79X29JuAA71BIM5xvYdh9zW6QsuQkW7YRoCpb4f-g-v95zZFWU2IA9OQEQoSDUUD_Ox5Ham6tyTpBWvLGaI6bL9aOS_)
+
+* รูปที่ 5 เลือกซื้อสินค้าใน shop
+```
+@startuml
+title Buy Product 
+(*) --> "Customer"
+Customer -d-> Shop 
+
+if "  Select Product" then
+  -d->[Pleased] "Buy"
+  -d-> Pay
+  -d->[End] (*)  
+    
+else
+  -r->[displeased] "Choose Again"
+  "Choose Again" -u-> Shop 
+endif
+@enduml
+```
+
+![](http://www.plantuml.com/plantuml/img/LKyx2iCm3DrrYeUdjk0hbBIXUo1ZwM1gfJ4uTl1doEshb2JGHHBleoSrkPXKwkIfkE8PzxgWIz7MTm6TBcTeVOLgQovnugHedw2j4FqOPn2v0GhesREuDhT26JaGVi9dvzbajYye2L0RYiuik-0HX5pp88WKzfbNBWbdNPuFVpl6c1ctZt5XNVGFGDVZB0xM3TH8a_U-)
