@@ -159,7 +159,7 @@ title Delivery
 (*) --> "Postman"
 Postman -d-> delivery 
 
-if "postman come delivery\nand recipient...." then
+if "  postman come delivery\nand recipient...." then
   -d->[stay at home] "Send success"
   -d->[End] (*)  
     
@@ -170,4 +170,4 @@ endif
 @enduml
 ```
 
-![](http://www.plantuml.com/plantuml/img/JK_D2i8m3BxtAJvwKg4-WkoWLn4zwWwbpLYXwqQR2NjxCvrZEIJX-ybFLTXc7hkeE70ad2c6D-K9QdVOmvWJzAqltDcarTB0U87zAbIXWHuMplKThTmhsUIHoOKXKEAZX0Qtb1I-GvwoV89bjEAgeHyayZ8wHwNel-QIV8tv60WYYMAXcSl2NNlUsEzKPC1i_7Kmu-PG9KXeL2L5tlq0)
+![](http://www.plantuml.com/plantuml/img/JK_D2i8m3BxtAJvwKg4-WkoWLn4zwWwbpLYXwqQR2NjxCvrZEIJX-ybFLTXc7hkeE70ad2c6D-K9QdVOmvWJzAqltDcarTB0U87zAbIXWGQ6XNLzHolxIZPvP79X29JuAA71BIM5xvYdh9zW6QsuQkW7YRoCpb4f-g-v95zZFWU2IA9OQEQoSDUUD_Ox5Ham6tyTpBWvLGaI6bL9aOS_)
