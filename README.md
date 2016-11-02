@@ -151,3 +151,23 @@ endif
 ```
 
 ![](http://www.plantuml.com/plantuml/img/LK-x3i8m3Dpz5QTCWCGle3B0t06cgaFKfgr5SAJ47Vhtk2q3JDQTxw6hYlgiypkIiiQ0fyJKlS3rb2JGuNJ4-No1sp6yzBYpZ24x8XxWwbcnf3bZs5WaWKu1fVCY9bg14DQCfcZsF4xQmlsLEFkR8bjDSvE-jKuAiGJQoKQIuiVxo0kkesTntzpLWyqaFGz4bLtRym40)
+
+* รูปที่ 4 บุรุษไปรษณีย์ ส่งของ
+```
+@startuml
+title Delivery 
+(*) --> "Postman"
+Postman -d-> delivery 
+
+if "postman come delivery\nand recipient...." then
+  -d->[stay at home] "Send success"
+  -d->[End] (*)  
+    
+else
+  -r->[Not at home] "Resend"
+  Resend -u-> delivery
+endif
+@enduml
+```
+
+![](http://www.plantuml.com/plantuml/img/JK_D2i8m3BxtAJvwKg4-WkoWLn4zwWwbpLYXwqQR2NjxCvrZEIJX-ybFLTXc7hkeE70ad2c6D-K9QdVOmvWJzAqltDcarTB0U87zAbIXWHuMplKThTmhsUIHoOKXKEAZX0Qtb1I-GvwoV89bjEAgeHyayZ8wHwNel-QIV8tv60WYYMAXcSl2NNlUsEzKPC1i_7Kmu-PG9KXeL2L5tlq0)
